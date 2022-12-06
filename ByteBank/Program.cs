@@ -12,13 +12,16 @@ contaDoLucas.Depositar(100);
 
 Console.WriteLine("Saldo da conta do Lucas pós-deposito =" + contaDoLucas.saldo);
 
-if (contaDoLucas.sacar(300) == true)
-{
-    Console.WriteLine("Saldo da conta do Lucas pós-saque =" + contaDoLucas.saldo);
-}
-else
-{
-    Console.WriteLine("Saldo insuficiente para saque");
-}
+ContaCorrente contaDaMaria = new ContaCorrente();
+contaDaMaria.titular = "Maria Souza";
+contaDaMaria.numero_agencia = 13;
+contaDaMaria.conta = "1010-5";
+contaDaMaria.saldo = 350;
+
+Console.WriteLine("Saldo da conta da Maria =" + contaDaMaria.saldo);
+
+contaDoLucas.Transferir(50, contaDaMaria);
+Console.WriteLine("Saldo do Lucas = " + contaDoLucas.saldo);
+Console.WriteLine("Saldo da Maria = " + contaDaMaria.saldo);
 
 
