@@ -42,3 +42,20 @@
 
 
 
+Cliente cliente = new Cliente();
+cliente.nome = "Lucas Sodré";
+cliente.cpf = "124536882";
+cliente.profissao = "Desenvolvedor";
+
+ContaCorrente conta = new ContaCorrente();
+conta.titular = cliente;
+conta.conta = "1010-x";
+conta.numero_agencia= 15;
+conta.saldo = 100;
+
+Console.WriteLine("Titular =" + conta.titular.nome);
+Console.WriteLine("Cpf =" + conta.titular.cpf);
+Console.WriteLine("Profissão =" + conta.titular.profissao);
+Console.WriteLine("N° Conta =" + conta.conta);
+Console.WriteLine("Saldo = " + conta.saldo);
+Console.WriteLine("N° Agência =" + conta.numero_agencia);
