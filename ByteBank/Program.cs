@@ -1,4 +1,5 @@
-﻿using ByteBank;
+﻿using ByteBank.Contas;
+using ByteBank.Titular;
 
 //ContaCorrente contaDoLucas = new ContaCorrente();
 //contaDoLucas.titular = "Lucas Sodré";
