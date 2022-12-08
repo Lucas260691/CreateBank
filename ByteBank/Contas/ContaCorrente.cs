@@ -13,7 +13,7 @@ namespace ByteBank.Contas
         public int Numero_agencia
         {
             get { return this.numero_agencia; }
-            set {
+            private set {
                     if (value > 0)
                     {
                         this.numero_agencia = value;
@@ -72,6 +72,12 @@ namespace ByteBank.Contas
         public double GetSaldo()
         {
             return this.saldo;
+        }
+
+        public ContaCorrente(int numero_agencia, string numero_conta)
+        {
+            this.numero_agencia = numero_agencia;
+            this.Conta = numero_conta;
         }
 
        

@@ -12,4 +12,6 @@ namespace ByteBank.Titular
         public string Profissao { get; set; }
         public string cpf { get; set; }
     }
+
+    
 }
