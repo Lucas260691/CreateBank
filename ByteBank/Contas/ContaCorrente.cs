@@ -20,10 +20,10 @@ namespace ByteBank.Contas
                     }
                 }
         }
-        private string conta;
+        public string Conta { get; set; }
         private double saldo = 100;
 
-        private Cliente titular;
+        public Cliente Titular { get; set; }
 
         public void Depositar(double valor)
         {
@@ -74,12 +74,6 @@ namespace ByteBank.Contas
             return this.saldo;
         }
 
-        public void ExibirDadosDaConta()
-        {
-            Console.WriteLine("Titular :" + titular);
-            Console.WriteLine("Conta :" + conta);
-            Console.WriteLine("Número Agência :" + numero_agencia);
-            Console.WriteLine("Saldo: " + saldo);
-        }
+       
     }
 }
