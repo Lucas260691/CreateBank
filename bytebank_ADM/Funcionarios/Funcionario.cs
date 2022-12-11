@@ -12,9 +12,12 @@ namespace ByteBank.Funcionarios
         public string Cpf { get; set; }
         public double Salario { get; set; }
 
+
         public double getBonificacao()
         {
+
             return this.Salario * 0.10;
         }
+
     }
 }
