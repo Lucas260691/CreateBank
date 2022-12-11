@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace Bytebank_ADM.Funcionarios
 {
     public class Funcionario
     {
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public double Salario { get; set; }
-
-
         public double getBonificacao()
-        {
+            {
 
-            return this.Salario * 0.10;
-        }
+                return this.Salario * 0.10;
+            }
 
+        
     }
 }

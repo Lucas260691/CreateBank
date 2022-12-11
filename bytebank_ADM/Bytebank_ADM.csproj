@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Funcionarios\Utilitario\**" />
+    <EmbeddedResource Remove="Funcionarios\Utilitario\**" />
+    <None Remove="Funcionarios\Utilitario\**" />
+  </ItemGroup>
+
 </Project>
