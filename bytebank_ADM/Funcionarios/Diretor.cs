@@ -14,5 +14,10 @@ namespace Bytebank_ADM.Funcionarios
 
             return this.Salario + base.GetBonificacao();
         }
+
+        public Diretor(string cpf):base(cpf)
+        {
+
+        }
     }
 }
