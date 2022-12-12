@@ -8,7 +8,7 @@ joao.Cpf = "651651651";
 joao.Salario = 2000;
 
 Console.WriteLine(joao.Nome);
-Console.WriteLine(joao.getBonificacao());
+Console.WriteLine(joao.GetBonificacao());
 
 Diretor rafael = new Diretor();
 rafael.Nome = "Rafael Rojas";
@@ -16,7 +16,7 @@ rafael.Cpf = "216516516514";
 rafael.Salario = 40000;
 
 Console.WriteLine(rafael.Nome);
-Console.WriteLine(rafael.getBonificacao());
+Console.WriteLine(rafael.GetBonificacao());
 
 GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 gerenciador.Registrar(joao);
