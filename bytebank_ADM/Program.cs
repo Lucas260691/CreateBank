@@ -65,8 +65,8 @@ void UsarSistema()
     bernardo.Nome = "Bernardo Santos";
     bernardo.Login = "bernardo@email.com";
     bernardo.Senha = "flaflu2019";
-
-    sistema.Logar(bernardo, "flaflu2019", "bernardo@email.com");
+   
+    sistema.Logar(bernardo, "bernardo@email.com", "flaflu2019");
 
 
     //Diretor ingrid = new Diretor("3165165");

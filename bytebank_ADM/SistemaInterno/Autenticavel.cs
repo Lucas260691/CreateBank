@@ -15,10 +15,8 @@ namespace Bytebank_ADM.SistemaInterno
         public string Senha { get; set; }
         public string Login { get; set; }
 
-        public virtual bool Autenticar(string login, string senha)
-        {
-            return (Senha == senha && Login == login);
-        }
+        public abstract bool Autenticar(string login, string senha);
+        
        
     }
 }

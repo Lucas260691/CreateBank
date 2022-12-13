@@ -26,9 +26,9 @@ namespace Bytebank_ADM.Funcionarios
             this.Salario *= 1.15;
         }
 
-        public override bool Autenticar(string senha, string login)
+        public override bool Autenticar(string login, string senha)
         {
-            return this.Senha == senha;
+            return this.Login == login && this.Senha == senha;
            
         }
     }
