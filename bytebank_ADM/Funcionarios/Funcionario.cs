@@ -24,7 +24,8 @@ namespace Bytebank_ADM.Funcionarios
         }
 
         public abstract void AumentarSalario();
+
+
        
-        
     }
 }

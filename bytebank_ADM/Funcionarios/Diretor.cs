@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bytebank_ADM.SistemaInterno;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bytebank_ADM.Funcionarios
 {
-    public class Diretor:Funcionario
+    public class Diretor:Autenticavel
     {
       
         public override double GetBonificacao()
@@ -25,8 +26,7 @@ namespace Bytebank_ADM.Funcionarios
             this.Salario *= 1.15;
         }
 
-        public string Senha { get; set; }
-        public bool Autenticar(string senha)
+        public override bool Autenticar(string senha)
         {
             return this.Senha == senha;
         }
