@@ -61,16 +61,24 @@ void UsarSistema()
 {
     SistemaInterno sistema = new SistemaInterno();
 
-    Diretor ingrid = new Diretor("3165165");
-    ingrid.Nome = "Ingrid Novaes";
-    ingrid.Senha = "123";
+    Diretor bernardo = new Diretor("3135165");
+    bernardo.Nome = "Bernardo Santos";
+    bernardo.Login = "bernardo@email.com";
+    bernardo.Senha = "flaflu2019";
 
-    GerenteDeContas ursula = new GerenteDeContas("346541654");
-    ursula.Nome = "Ursula Alcantara";
-    ursula.Senha = "321";
+    sistema.Logar(bernardo, "flaflu2019", "bernardo@email.com");
+
+
+    //Diretor ingrid = new Diretor("3165165");
+    //ingrid.Nome = "Ingrid Novaes";
+    //ingrid.Senha = "123";
+
+    //GerenteDeContas ursula = new GerenteDeContas("346541654");
+    //ursula.Nome = "Ursula Alcantara";
+    //ursula.Senha = "321";
 
    
-    sistema.Logar(ingrid, "123");
-    sistema.Logar(ursula, "963");
+    //sistema.Logar(ingrid, "123");
+    //sistema.Logar(ursula, "963");
    
 }
