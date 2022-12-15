@@ -99,3 +99,24 @@ using ByteBank.Titular;
 //ContaCorrente conta7 = new ContaCorrente(285, "1111-Z");
 //Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
 
+namespace ByteBank
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                ContaCorrente conta = new ContaCorrente(0, 0);
+            }
+            catch(ArgumentException ex) 
+            {
+                Console.WriteLine("Ocorreu um erro do tipo ArgumentExeption");
+                Console.WriteLine(ex.Message);
+            }
+            
+            
+            Console.ReadLine();
+        }
+    }
+}
